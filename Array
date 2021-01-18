@@ -1,1 +1,24 @@
+# List is useful code to store group of strings and list in an organized manner.
+# However it can't offer method for array or database
+# If you want to organize multipe items upder a single group, dictionary will be good choice
 
+###########creating a dictionary############
+
+% dict create 1 John
+=> 1 John
+% dict create 1 John 2 Mary 3 Paul
+=> 1 John 2 Mary 3 Paul
+# dict create command create a new dictionary that contains each of the key and value mappings that flw
+
+# Using 'set' with the 'dic create' command
+# While the 'dict create' command allow us to create a dictionary and easily add the key value pairs
+# we have no named varaible to allow us to access oru dictionary.
+# To allow us to access the dictionary, we will need to combine the Tcl 'set' command with 'dict create' command
+# to have a named dictionary that we can access
+
+% set names [dict create 1 John 2 Mary 3 Paul]
+=> 1 John 2 Mary 3 Paul
+% dict append names 4 Fred
+=> 1 John 2 Mary 3 Paul 4 Fred
+
+# dict append command append a key and value pairs to the dictionary refenced by name
